@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 5073711520842661655}
   - component: {fileID: 3586497214301520287}
   - component: {fileID: -3411918455596480792}
+  - component: {fileID: 6282981401853781885}
   m_Layer: 0
   m_Name: RedCircle
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -148,3 +149,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &6282981401853781885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210572615348668338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b65cc9ac7f08bab409eca7ee0838d28f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
