@@ -14,6 +14,8 @@ public class GameManager : MonoBehaviour
     void Update()
     {
         _timer -= Time.deltaTime;
+        if (_timer < 0)
+            _timer = 0;
         if(_isInput)
         {
             _scoreText.text = _ScoreManager._colorScore.ToString();
