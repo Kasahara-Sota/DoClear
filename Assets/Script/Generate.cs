@@ -17,7 +17,7 @@ public class Generate : MonoBehaviour
     private int _power;
     
     [SerializeField] GenerateDir _dir;
-
+    [SerializeField]GameManager _gameManager;
     void Start()
     {
         _position = transform.position;
@@ -28,7 +28,7 @@ public class Generate : MonoBehaviour
     {
         if (Input.anyKeyDown)
         {
-            Debug.Log("pushed");
+            _gameManager._isInput = true;
             _obj = Instantiate(_prehubs[Random.Range(0, 3)], _position, Quaternion.identity) as GameObject;
             _rb = _obj.GetComponent<Rigidbody2D>();
             _vec.x = Random.Range(5, 10);
