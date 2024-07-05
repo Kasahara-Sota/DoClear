@@ -26,6 +26,9 @@ public class GameManager : MonoBehaviour
             _scoreText.text = "SCORE:" + _ScoreManager._colorScore.ToString();
             _timerText.text = _timer.ToString("F2");
         }
-        
+        if(_ScoreManager._redCount >= 1 && _ScoreManager._redCount == _ScoreManager._redCount + _ScoreManager._greenCount + _ScoreManager._blueCount)
+            _scoreText.color = Color.red;
+        else
+            _scoreText.color = Color.black;
     }
 }
