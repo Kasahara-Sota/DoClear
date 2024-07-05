@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     public bool _isInput;
+    public bool _isTimeUp;
     [SerializeField] Text _scoreText;
     [SerializeField] Text _timerText;
     private float _timer = 60f;
@@ -15,10 +16,14 @@ public class GameManager : MonoBehaviour
     {
         _timer -= Time.deltaTime;
         if (_timer < 0)
+        {
             _timer = 0;
+            _isTimeUp = true;
+        }
+            
         if(_isInput)
         {
-            _scoreText.text = _ScoreManager._colorScore.ToString();
+            _scoreText.text = "SCORE:" + _ScoreManager._colorScore.ToString();
             _timerText.text = _timer.ToString("F2");
         }
         

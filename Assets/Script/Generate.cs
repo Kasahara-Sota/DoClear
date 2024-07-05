@@ -26,7 +26,7 @@ public class Generate : MonoBehaviour
 
     void Update()
     {
-        if (Input.anyKeyDown)
+        if (Input.anyKeyDown && _gameManager._isTimeUp == false)
         {
             _gameManager._isInput = true;
             _obj = Instantiate(_prehubs[Random.Range(0, 3)], _position, Quaternion.identity) as GameObject;

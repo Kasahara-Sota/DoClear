@@ -161,3 +161,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b65cc9ac7f08bab409eca7ee0838d28f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _scoreManager: {fileID: 6243662676672823024, guid: 1eea42d53aae5d547b88c3ada4d4e042, type: 3}
+  _gameManager: {fileID: 6215695914601956313, guid: 2fd2d371a67ffad49893500e69d91d44, type: 3}

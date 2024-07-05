@@ -19,12 +19,12 @@ public class ScoreManager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetButtonDown("Fire1"))
+        _colorScore = _redCount * _redPoint + _greenCount * _greenPoint + _blueCount * _bluePoint;
+
+        if (Input.GetButtonDown("Fire1"))
         {
-            Debug.Log($"R:{_redCount} G:{_greenCount} B:{_blueCount}");
-            _colorScore = _redCount * _redPoint + _greenCount * _greenPoint + _blueCount * _bluePoint;
+            Debug.Log($"R:{_redCount} G:{_greenCount} B:{_blueCount}");           
             Debug.Log(_colorScore);
         }
-        
     }
 }
