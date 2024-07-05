@@ -26,9 +26,10 @@ public class Generate : MonoBehaviour
 
     void Update()
     {
-        if (Input.anyKeyDown && _gameManager._isTimeUp == false)
+        if (Input.anyKeyDown && _gameManager.IsTimeUp == false)
         {
-            _gameManager._isInput = true;
+            _gameManager.AddBottunDownedCount();
+            _gameManager.IsInput = true;
             _obj = Instantiate(_prehubs[Random.Range(0, 3)], _position, Quaternion.identity) as GameObject;
             _rb = _obj.GetComponent<Rigidbody2D>();
             _vec.x = Random.Range(5, 10);
